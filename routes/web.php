@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\HelloWorldController;
+use App\Http\Controllers\UserController;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/users/list', [UserController::class,'index'])->Middleware('auth');
