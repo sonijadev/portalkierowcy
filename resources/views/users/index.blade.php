@@ -17,7 +17,7 @@
   <tbody>
     @foreach($users as $user)
         <tr>
-            <th scope="row">{{ $loop->iteration }}</th>
+            <th scope="row">{{ $user->id }}</th>
             <td>{{ $user->name }}</td>
             <td>{{ $user->surname }}</td>
             <td>{{ $user->phone_number }}</td>
@@ -28,4 +28,9 @@
   </tbody>
 </table>
 </div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+      {{ $users->links() }}
+  </ul>
+</nav>
 @endsection
