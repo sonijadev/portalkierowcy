@@ -9,6 +9,7 @@
       <th scope="col">#</th>
       <th scope="col">Imię</th>
       <th scope="col">Nazwisko</th>
+      <th scope="col">Nr telefonu</th>
       <th scope="col">Adres e-mail</th>
       <th scope="col">Akcje</th>
     </tr>
@@ -18,7 +19,8 @@
         <tr>
             <th scope="row">{{ $loop->iteration }}</th>
             <td>{{ $user->name }}</td>
-            <td></td>
+            <td>{{ $user->surname }}</td>
+            <td>{{ $user->phone_number }}</td>
             <td>{{ $user->email }}</td>
             <td></td>
         </tr>

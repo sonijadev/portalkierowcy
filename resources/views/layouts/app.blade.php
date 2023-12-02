@@ -24,7 +24,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="https://workflow.sonija.pl/BIURO/Grafika/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. LOGO" width="180" height="60">
+                    <!-- <img src="https://workflow.sonija.pl/BIURO/Grafika/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. LOGO" width="180" height="60"> -->
+                    Portal Kierowcy
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
