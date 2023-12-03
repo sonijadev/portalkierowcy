@@ -16,6 +16,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <style>
+        body{background-image: url('https://pkdoc.sonija.pl/images/gdyniabg.png'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
         .footerlink {text-decoration: none;} footer{position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);}
         </style>
 </head>
@@ -24,8 +25,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <!-- <img src="https://workflow.sonija.pl/BIURO/Grafika/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. LOGO" width="180" height="60"> -->
-                    Portal Kierowcy
+                    <img src="https://pkdoc.sonija.pl/images/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. PORTAL KIEROWCY LOGO" width="200" height="60" title="Strona Główna">
+                    <!-- Portal Kierowcy -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->name }} {{ Auth::user()->surname }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

@@ -13,7 +13,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-    <div class="card mb-4 box-shadow text-center">
+    <div class="card mb-4 shadow-sm text-center" style="margin-top: 8%;">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Abonament #A</h4>
           </div>
@@ -25,29 +25,31 @@
               <li>Wiele metod płatności</li>
               <li>Rabaty itp</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Dodaj do koszyka</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Dodaj do koszyka</button>
           </div>
         </div>
     </div>
     <div class="col-sm">
-    <div class="card mb-4 box-shadow text-center">
+    <div class="card mb-4 shadow text-center bg-dark text-light" style="min-height: 40vh; width: 30rem;">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Abonament #B</h4>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">PLN 300 <small class="text-muted">/ msc</small></h1>
+          
+          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+          <span class="badge badge-success" style="background-color: #28A745; font-size: 12px; color: #fff; border-radius: 4px; padding: 4px 6px;">NAJCZĘŚCIEJ WYBIERANY</span>
+            <h1 class="card-title pricing-card-title display-3">PLN 300 <small class="">/ msc</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Podstrefa B</li>
               <li>Płatność miesięczna, półroczna lub roczna</li>
               <li>Wiele metod płatności</li>
               <li>Rabaty itp</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Dodaj do koszyka</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Dodaj do koszyka</button>
           </div>
         </div>
     </div>
     <div class="col-sm">
-    <div class="card mb-4 box-shadow text-center">
+    <div class="card mb-4 shadow-sm text-center" style="margin-top: 8%;">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Abonament #C</h4>
           </div>
@@ -59,7 +61,7 @@
               <li>Wiele metod płatności</li>
               <li>Rabaty itp</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Dodaj do koszyka</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Dodaj do koszyka</button>
           </div>
         </div>
     </div>

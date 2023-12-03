@@ -108,6 +108,7 @@ return [
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
+            'path' => storage_path('logs/laravel.log'),
             'facility' => LOG_USER,
             'replace_placeholders' => true,
         ],
