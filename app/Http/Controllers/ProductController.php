@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Illuminate\Http\JsonResponse;
+use Throwable;
 
 class ProductController extends Controller
 {
@@ -12,7 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view("products.index", [
+            'products'=> Product::paginate(10)
+        ]);
     }
 
     /**
@@ -20,15 +25,19 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view("products.create");
     }
 
     /**
      * Store a newly created resource in storage.
+     * @param Request $request
+     * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        //
+        $product = new Product($request->all());
+        $product->save();
+        return redirect(route('products.index'));  
     }
 
     /**
@@ -36,7 +45,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view("products.show", [
+            'product'=> $product
+        ]);
     }
 
     /**
@@ -44,7 +55,9 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view("products.edit", [
+            'product'=> $product
+        ]);
     }
 
     /**
@@ -52,14 +65,26 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $product->fill($request->all());
+        $product->save();
+        return redirect(route('products.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy(Product $product): JsonResponse
     {
-        //
+       try {
+        $product->delete();
+        return response()->json([
+            'status' => 'success'
+        ]);
+       } catch (Throwable $e) {
+        return response()->json([
+            'status'=> 'error',
+            'message'=> 'Wystąpił błąd'
+            ])->setStatusCode(500);
+       }
     }
 }

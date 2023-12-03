@@ -2,7 +2,7 @@ $(function() {
     $('.userdeletebtn').click(function() {
                   Swal.fire({
               title: "Potwierdź usunięcie",
-              text: "Czy jesteś pewien, że chcesz usunąć wybranego użytkownika?",
+              text: "Czy jesteś pewien, że chcesz usunąć wybrany rekord?",
               icon: "warning",
               showCancelButton: true,
               confirmButtonColor: "#FF0000",

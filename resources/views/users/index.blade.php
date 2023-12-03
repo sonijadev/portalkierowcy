@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="container">
+  <div class="row mb-4 mt-4">
     <h3>Lista zarejestrowanych użytkowników:</h3>
+  </div>
+  
 <table class="table table-hover">
   <thead class="thead-dark">
     <tr>

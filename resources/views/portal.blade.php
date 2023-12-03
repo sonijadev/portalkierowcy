@@ -18,7 +18,7 @@
             <h4 class="my-0 font-weight-normal">Abonament #A</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">PLN 150 <small class="text-muted">/ msc</small></h1>
+            <h1 class="card-title pricing-card-title"><small style="font-size: 18px;">PLN</small>  150 <small class="text-muted">/ msc</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Podstrefa A</li>
               <li>Płatność miesięczna, półroczna lub roczna</li>
@@ -37,7 +37,7 @@
           
           <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <span class="badge badge-success" style="background-color: #28A745; font-size: 12px; color: #fff; border-radius: 4px; padding: 4px 6px;">NAJCZĘŚCIEJ WYBIERANY</span>
-            <h1 class="card-title pricing-card-title display-3">PLN 300 <small class="">/ msc</small></h1>
+            <h1 class="card-title pricing-card-title display-3"><small style="font-size: 18px;">PLN</small>  300 <small class="">/ msc</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Podstrefa B</li>
               <li>Płatność miesięczna, półroczna lub roczna</li>
@@ -54,7 +54,7 @@
             <h4 class="my-0 font-weight-normal">Abonament #C</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">PLN 450 <small class="text-muted">/ msc</small></h1>
+            <h1 class="card-title pricing-card-title"><small style="font-size: 18px;">PLN</small> 450 <small class="text-muted">/ msc</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Podstrefa C</li>
               <li>Płatność miesięczna, półroczna lub roczna</li>
