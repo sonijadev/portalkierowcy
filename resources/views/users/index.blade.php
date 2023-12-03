@@ -22,7 +22,9 @@
             <td>{{ $user->surname }}</td>
             <td>{{ $user->phone_number }}</td>
             <td>{{ $user->email }}</td>
-            <td></td>
+            <td>
+              <button class="btn btn-sm btn-danger userdeletebtn" data-id="{{ $user->id }}">X</button>
+            </td>
         </tr>
     @endforeach
   </tbody>
@@ -33,4 +35,22 @@
       {{ $users->links() }}
   </ul>
 </nav>
+@endsection
+
+@section('javascript')
+$(function() {
+    $('.userdeletebtn').click(function() {
+        $.ajax({
+          method: "DELETE",
+          url: "/users/" + $(this).data("id"),
+          // data: { id: $(this).data("id") }
+        })
+        .done(function(response){
+          window.location.reload();
+        })
+        .fail(function(response){
+          alert("Error: ");
+        })
+    });
+});
 @endsection

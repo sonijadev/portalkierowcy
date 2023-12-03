@@ -84,38 +84,10 @@
         </main>
     </div>
     <div class="b-example-divider"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">© @if (date('Y') != '2023') 2023 - @endif {{ date('Y') }} City Parking Group S.A.</p>
-      @php
-        $example = [
-          [
-            'text' => 'Regulamin',
-            'href' => '#',
-          ],
-          [
-            'text' => 'Polityka prywatności',
-            'href' => '#',
-          ],
-          [
-            'text' => 'Polityka cookies',
-            'href' => '#',
-          ],
-          [
-            'text' => 'O autorze',
-            'href' => '#',
-          ],
-        ]
-      @endphp
-
-      <ul class="list-inline">
-        @foreach($example as $item)
-          <li class="list-inline-item">
-            <a href="{{ $item['href'] }}" target="_blank" class="footerlink">{{ $item['text'] }}</a>
-          </li>
-        @endforeach
-      </ul>
-      
-    </footer>
+    <script type="text/javascript">
+        @yield('javascript')
+    </script>
 </body>
 </html>
