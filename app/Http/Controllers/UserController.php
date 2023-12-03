@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Throwable;
 
 class UserController extends Controller
 {
@@ -60,12 +62,18 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(User $user): JsonResponse
     {
-        $flight = User::find($id);
-        $flight->delete();
-        return response()->json([
-            'status'=> 'success'
-        ]);
+        try {
+            $user->delete();
+            return response()->json([
+                'status'=> 'success'
+            ]);
+        } catch(Throwable $e) {
+            return response()->json([
+                'status'=> 'error',
+                'message'=> 'Wystąpił błąd!'
+        ])->setStatusCode(500);
+        }
     }
 }

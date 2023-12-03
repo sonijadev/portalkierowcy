@@ -26,4 +26,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/users/list', [UserController::class,'index'])->Middleware('auth');
 
-Route::delete('users/{id}', [UserController::class,'destroy'])->Middleware('auth');
+Route::delete('users/{user}', [UserController::class,'destroy'])->Middleware('auth');
