@@ -75,12 +75,19 @@
                                 <input id="image" type="file" class="form-control" name="image">
                             </div>
                         </div>
-
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-md-6">
-                                <img src="{{ asset('storage/' . $product->image_path) }}" alt="Zdjęcie produktu">
+                            @if(!is_null($product->image_path))
+                            <div class="row mb-3 justify-content-center">
+                                <div class="col-md-6">
+                                    <img src="{{ asset('storage/' . $product->image_path) }}" alt="Zdjęcie produktu">
+                                </div>
                             </div>
-                        </div>
+                            @else
+                            <div class="row mb-3 justify-content-center">
+                                <div class="col-md-6">
+                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" alt="Zdjęcie produktu">
+                                </div>
+                            </div>
+                            @endif
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">

@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="https://pkdoc.sonija.pl/images/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. PORTAL KIEROWCY LOGO" width="200" height="60" title="Strona Główna">
@@ -56,12 +56,12 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} {{ Auth::user()->surname }}
+                                    {{ Auth::user()->name . ' ' . Auth::user()->surname }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/users/list">Użytkownicy</a>
-                                    <a class="dropdown-item" href="{{ route('products.index') }}">Produkty</a>
+                                    <a class="dropdown-item" href="/users/list">Admin - Użytkownicy</a>
+                                    <a class="dropdown-item" href="{{ route('products.index') }}">Admin - Produkty</a>
                                     
                                     <a class="dropdown-item text-danger" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -80,10 +80,31 @@
                 </div>
             </div>
         </nav>
+        <ul class="nav justify-content-center navbar navbar-light bg-white border-bottom shadow-sm">
+            <li class="nav-item ">
+                <a class="nav-link pmn" href="{{ url('/') }}">Strona Główna</a>
+            </li>
+            <li class="nav-item" style="color: red!important;">
+                <a class="nav-link pmn" href="#">Strona SPP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pmn" href="#">Regulamin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pmn" href="#">Dodatkowe informacje</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pmn" href="#">Kontakt</a>
+            </li>
+        </ul>
 
         <main class="py-4">
             @yield('content')
         </main>
+    </div>
+
+    <div class="container mt-5 mb-4 text-center">
+        Copyright {{ date('Y') }}. All rights reserved for City Parking Group S.A. <br> Powered by <a href="https://sonija.pl" target="_blank"><img src="https://dev.sonija.pl/assets/sonijalogoczarne.svg" width="20" height="20"></a>
     </div>
     <div class="b-example-divider"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

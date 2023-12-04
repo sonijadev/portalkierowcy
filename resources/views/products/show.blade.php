@@ -9,6 +9,19 @@
                 <div class="card-header">Podgląd produktu ID#{{ $product->id }}</div>
 
                 <div class="card-body">
+                            @if(!is_null($product->image_path))
+                            <div class="row mb-3 justify-content-center">
+                                <div class="col-md-6">
+                                    <img src="{{ asset('storage/' . $product->image_path) }}" alt="Zdjęcie produktu">
+                                </div>
+                            </div>
+                            @else
+                            <div class="row mb-3 justify-content-center">
+                                <div class="col-md-6">
+                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" alt="Zdjęcie produktu">
+                                </div>
+                            </div>
+                            @endif
 
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nazwa') }}</label>
