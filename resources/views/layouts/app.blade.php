@@ -14,7 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/footer.css'])
     <style>
         body{background-image: url('https://pkdoc.sonija.pl/images/gdyniabg.png'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
         .footerlink {text-decoration: none;} footer{position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);}
@@ -88,6 +88,9 @@
     <div class="b-example-divider"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
 
 
     <script type="text/javascript">

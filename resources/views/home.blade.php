@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Gratulacje! Zalogowałeś się do portalu kierowcy') }}
+                    {{ __('Gratulacje! Zalogowałeś się do portalu kierowcy. Użyj menu aby zacząć korzystać z aplikacji') }}
                 </div>
             </div>
         </div>

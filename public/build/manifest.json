@@ -1,11 +1,21 @@
 {
+  "resources/css/footer.css": {
+    "file": "assets/footer-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/css/footer.css"
+  },
   "resources/js/app.js": {
     "file": "assets/app-39dcccdc.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
+  "resources/js/delete.js": {
+    "file": "assets/delete-338927b0.js",
+    "isEntry": true,
+    "src": "resources/js/delete.js"
+  },
   "resources/sass/app.scss": {
-    "file": "assets/app-041e359a.css",
+    "file": "assets/app-c5b50405.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
