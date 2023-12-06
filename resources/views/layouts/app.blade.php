@@ -13,6 +13,9 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- FAVICON -->
+    <link rel="icon" href="{{ url('img/sonijalogoczarne.svg') }}">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/footer.css'])
     <style>
@@ -34,8 +37,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link pmn" href="{{ url('/') }}">Strona Główna</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link pmn" href="#">Strona SPP</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link pmn" href="#">Regulamin</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link pmn" href="#">Dodatkowe informacje</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link pmn" href="#">Kontakt</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -80,23 +97,6 @@
                 </div>
             </div>
         </nav>
-        <ul class="nav justify-content-center navbar navbar-light bg-white border-bottom shadow-sm">
-            <li class="nav-item ">
-                <a class="nav-link pmn" href="{{ url('/') }}">Strona Główna</a>
-            </li>
-            <li class="nav-item" style="color: red!important;">
-                <a class="nav-link pmn" href="#">Strona SPP</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pmn" href="#">Regulamin</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pmn" href="#">Dodatkowe informacje</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pmn" href="#">Kontakt</a>
-            </li>
-        </ul>
 
         <main class="py-4">
             @yield('content')

@@ -1,6 +1,6 @@
 {
   "resources/css/footer.css": {
-    "file": "assets/footer-bf92aa8e.css",
+    "file": "assets/footer-ef5d2878.css",
     "isEntry": true,
     "src": "resources/css/footer.css"
   },
@@ -15,7 +15,7 @@
     "src": "resources/js/delete.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-c5b50405.css",
+    "file": "assets/app-ce98fe22.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
