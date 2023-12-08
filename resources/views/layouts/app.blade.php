@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="https://pkdoc.sonija.pl/images/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. PORTAL KIEROWCY LOGO" width="200" height="60" title="Strona Główna">
+                    <img src="https://pkdoc.sonija.pl/images/portalKierowcyLogo.png" alt="CITY PARKING GROUP S.A. PORTAL KIEROWCY LOGO" width="230" height="60" title="Strona Główna">
                     <!-- Portal Kierowcy -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
